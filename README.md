@@ -142,10 +142,10 @@ Sobrescribe/agrega según el modo de escritura, según especificación de partic
          - IAM Role (autenticación segura sin keys para poder acceder a S3).
 
 - Se limpian, normalizan y enriquecen los datos de la capa bronze.
-    - [`weather_silver_job.py`](spark-m4\app\weather_silver_job.py) → procesamiento 
+    - [`weather_silver_job.py`](spark-m4/app/weather_silver_job.py) → procesamiento 
 
 - Se generan en la capa Gold, modelos que pretenden responder algunas de las preguntas de negocio planteadas.
-    -  [`weather_gold_job.py`](spark-m4\app\weather_gold_job.py) → modelado analítico (dims, facts, algunas respuestas)
+    -  [`weather_gold_job.py`](spark-m4/app/weather_gold_job.py) → modelado analítico (dims, facts, algunas respuestas)
 
 - Flujo 
     ![Diagrama del flujo ETLT](assets/figs/avance3-flujo.png)
