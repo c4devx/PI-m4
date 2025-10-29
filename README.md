@@ -5,7 +5,7 @@
 ## Avance I - Diseño ETLT
 
 - Desarrollo de un documento técnico que describa el diseño del pipeline ETLT.  
-**#** [`AVANCE_1_PI_M4.pdf`](AVANCE_1_PI_M4.pdf)
+**#** [avance1-pim4.pdf`](avance1-pim4.pdf)
 
 - Proporciona una descripción de la arquitectura, las fuentes de datos utilizadas, detalles del stack tecnológico seleccionado, preguntas de negocio, etc. Además, incluye cuestiones de gobernanza de datos y del ciclo de vida de la información.
 
@@ -142,10 +142,10 @@ Sobrescribe/agrega según el modo de escritura, según especificación de partic
          - IAM Role (autenticación segura sin keys para poder acceder a S3).
 
 - Se limpian, normalizan y enriquecen los datos de la capa bronze.
-    - [`weather_silver_job.py`](spark-etlt\app\weather_silver_job.py) → procesamiento 
+    - [`weather_silver_job.py`](spark-m4\app\weather_silver_job.py) → procesamiento 
 
 - Se generan en la capa Gold, modelos que pretenden responder algunas de las preguntas de negocio planteadas.
-    -  [`weather_gold_job.py`](spark-etlt\app\weather_gold_job.py) → modelado analítico (dims, facts, algunas respuestas)
+    -  [`weather_gold_job.py`](spark-m4\app\weather_gold_job.py) → modelado analítico (dims, facts, algunas respuestas)
 
 - Flujo 
     ![Diagrama del flujo ETLT](assets/figs/avance3-flujo.png)
