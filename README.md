@@ -4,11 +4,12 @@
 
 ## Avance I - Diseño ETLT
 
-- Desarrollo de un documento técnico que describa el diseño del pipeline ETLT.  
-**#** [avance1-pim4.pdf`](avance1-pim4.pdf) 
+- Desarrollo de un documento técnico que describa el diseño del pipeline ETLT.
 
 - Proporciona una descripción de la arquitectura, las fuentes de datos utilizadas, detalles del stack tecnológico seleccionado, preguntas de negocio, etc. Además, incluye cuestiones de gobernanza de datos y del ciclo de vida de la información.
 
+- **Diagrama**
+  ![`architecture-m4`](assets/figs/architecture-m4.png) 
 ---
 
 ## Avance II - Ingesta → Bronze 
