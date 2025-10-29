@@ -5,7 +5,7 @@
 ## Avance I - Diseño ETLT
 
 - Desarrollo de un documento técnico que describa el diseño del pipeline ETLT.  
-**#** [avance1-pim4.pdf`](avance1-pim4.pdf)
+**#** [avance1-pim4.pdf`](avance1-pim4.pdf) 
 
 - Proporciona una descripción de la arquitectura, las fuentes de datos utilizadas, detalles del stack tecnológico seleccionado, preguntas de negocio, etc. Además, incluye cuestiones de gobernanza de datos y del ciclo de vida de la información.
 
@@ -121,7 +121,9 @@ Cada stream invoca al endpoint con los parámetros propios de cada ciudad.
 | **Time zone** | `UTC` |
 | **Sync mode** | Full Refresh / Append |
 
-Sobrescribe/agrega según el modo de escritura, según especificación de particiones.
+- Sobrescribe/agrega según el modo de escritura, según especificación de particiones.
+
+![Airbyte conexión](assets/figs/avance2-airbyte.png)
 
 
 ### ✍️ Algunos comentarios
@@ -251,3 +253,29 @@ sudo docker exec -it spark bash -lc '
   --max-records-per-file 50000
 '
 ```
+
+### 📊 Visualización de algunos resultados
+
+- Potencia solar promedio vs hr 
+  ![`ps-vs-hr`](assets/figs/ps-month-mean-vs-hr.png) 
+
+  - Potencia eólica promedio vs hr 
+  ![`pw-vs-hr`](assets/figs/pw-month-mean-vs-hr.png) 
+
+  - Potencia solar promedio vs mes 
+  ![`pw-vs-mm`](assets/figs/pw-month-mean-vs-month.png) 
+
+  - Variación porcentual vs referencia
+  ![`delta-rps`](assets/figs/rps-vs-month.png) 
+
+  - Temperatura máxima y mínima alcanzadas 
+  ![`temp-M/m`](assets/figs/hc-temps-vs-city.png) 
+
+  - Temperatura vs mes 
+  ![`temp-vs-mm`](assets/figs/temphandl-vs-month.png) 
+
+  - Top 5 dias calientes y frios
+  ![`top5-dc&c`](assets/figs/top5handcdays.png) 
+
+  - Potencia solar promedio vs hr 
+  ![`b&wd-rps-dd`](assets/figs/bandwrpsday.png)
